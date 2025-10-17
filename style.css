@@ -107,8 +107,14 @@ body {
   color: var(--attribution-color);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25em) {
   .profile {
     width: 90%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-icon:hover {
+    transition: none;
   }
 }
