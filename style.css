@@ -6,6 +6,8 @@
   --clr-text: hsl(0, 0%, 100%);
   --clr-accent: hsl(75, 94%, 57%);
   --clr-icon-bg: hsl(0, 0%, 20%);
+  --attribution-color: hsl(228, 45%, 44%);
+  --country-info-color: hsl(75, 94%, 57%);
 }
 
 * {
@@ -18,8 +20,8 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 8%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
 }
 
 .profile {
@@ -32,7 +34,7 @@ body {
   max-width: 410px;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(0, 0%, 12%);
+  background-color: var(--clr-card-bg);
 }
 
 .profile h1 {
@@ -43,7 +45,7 @@ body {
 .country-info {
   font-size: 14px;
   font-weight: 600;
-  color: hsl(75, 94%, 57%);
+  color: var(--country-info-color);
 }
 
 .profile img {
@@ -73,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 20%);
+  background-color: var(--clr-icon-bg);
   color: var(--clr-text);
   width: 320px;
   border-radius: 8px;
@@ -102,7 +104,7 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--attribution-color);
 }
 
 @media (max-width: 400px) {
